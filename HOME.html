@@ -13,55 +13,77 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="css/Login.css" rel="stylesheet">
 
-<body id="myPage">
+<body class="w-100 fondoMain fondo3 ">
 
-  <!-- Sidebar on click -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
-    id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-      <i class="fa fa-remove"></i>
-    </a>
-    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button">Link 4</a>
-    <a href="#" class="w3-bar-item w3-button">Link 5</a>
-  </nav>
+  <div class="container-fluid  w-100" style="min-height: 100vh;">
+    <div class="container-fluid p-0 row m-auto px-1  " style="max-width: 1450px;">
+        <div class="col-12 ">
+            <nav class="navbar navbar-expand-md navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ice_screenshot_20211108-171846.png" alt="" width="40" height="25" class="d-inline-block align-text-top">
+                    <span class="font-weight-bold color-letra3">Medical</span>
+                 </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-3 fw-bolder ">
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-3 fw-bolder ">
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-3 fw-bolder" >
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-3 fw-bolder">
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                  </li>
 
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
-        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-      <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-          <a href="#" class="w3-bar-item w3-button">Link</a>
-          <a href="#" class="w3-bar-item w3-button">Link</a>
-          <a href="#" class="w3-bar-item w3-button">Link</a>
+                </ul>
+                
+                <div class="">
+                    <button class="btn bg-white color-letra2 sombraBoton redondeadoEstado px-5 fw-bolder">Login</button>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
-      </div>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i
-          class="fa fa-search"></i></a>
-    </div>
+        <div class="col-12  m-auto p-0 " style="height: 750px;">
+            <div class="z-index2 col-12 d-flex flex-column  text-center  mt-md-5 justify-content-end justify-content-md-start align-items-center">
+               <!-- <div class="mt-5 d-none d-md-flex">
+                    <button class="btn bg-white color-letra2 sombraBoton redondeadoEstado "><i class="fas fa-circle text-success"></i> 2569 Doctores Online</button>
+                </div>-->
+               <!-- <div class="z-index1 d-flex d-md-none flex-column col-6 justify-content-between align-items-end">
+                    <img class="img-responsive" src="imagenes/doc.png" width="300" height="300" >
+                </div>-->
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-      <a href="#team" class="w3-bar-item w3-button">Team</a>
-      <a href="#work" class="w3-bar-item w3-button">Work</a>
-      <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      <a href="#" class="w3-bar-item w3-button">Search</a>
-    </div>
-  </div>
+                <h1 class="  fs-1 lh-base color-letra3 ">
+                    Controla tu bienestar,  
+                    Controla tu Corazon,
+                    Cuida tu vida
+                </h1>
+                <h5 class=" fs-5 lh-sm lh-base mb-lg-5 color-letra3a">Lleva registro diarios sobre tu salud y controles medicos. Tambien puedes consultar con un doctor en linea</h5>
+                <div class="mt-4 ">
+                    <button class="btn colorBoton sombraBoton redondeadoEstado p-md-2 px-lg-4 mb-5 px-md-3 fw-bold text-white">¡Vamos a cuidar tu vida!</button>
+                    <button class="btn bg-white color-letra3 sombraBoton redondeadoEstado ml-lg-4 mb-5 p-md-2 px-lg-4 px-md-3"><i class="fas fa-play-circle mr-2"></i>Aprende como</button>
 
-  <!-- Image Header -->
+                </div>
+                <div class="mt-4 d-md-none">
+                    <button class="btn bg-white color-letra2 sombraBoton redondeadoEstado"><i class="fas fa-circle text-success"></i> 2569 Doctor Online</button>
+                </div>
+
+            </div>
+            <!-- <div class="z-index1 d-none d-md-flex flex-column col-6 justify-content-between align-items-end">
+                <img class="img-responsive" src="imagenes/doc.png" width="600" height="730" >
+            </div>-->
+        </div>
+    </div>
+</div>
+
+  <!-- Image Header 
   <div class="w3-display-container w3-animate-opacity">
     <img src="img/vaccine2.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
@@ -70,7 +92,7 @@
     </div>
   </div>
 
-  <!-- Modal -->
+   Modal
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-teal w3-display-container">
@@ -87,7 +109,7 @@
         <p>Modal footer</p>
       </footer>
     </div>
-  </div>
+  </div>-->
 
   <!-- Team Container -->
   <div class="w3-container w3-padding-64 w3-center bg-info" id="team">

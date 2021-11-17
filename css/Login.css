@@ -9,6 +9,7 @@ html{
 body{
     min-height: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .claro{
@@ -164,4 +165,73 @@ input[type="radio"]:checked ~ label {
 
 .sombraColorRojo{
     box-shadow: 2px 7px 5px -1px rgb(255, 120, 120);
+}
+
+
+/*/////////////////////////////////////////////////////////////*/
+.fondo{
+    background-color: #DDEEFE;
+}
+
+.fondoMain{
+    background-image: url(/img/fondo\ 4.png)!important;
+    background-repeat: no-repeat; 
+    background-position: center top;
+ }
+
+.fondo2{
+    background: rgb(107,121,170);
+    background: linear-gradient(0deg, rgba(107,121,170,1) 0%, rgba(30,191,181,1) 100%); 
+}
+
+.fondo3{
+    background-color: rgb(36,205,227);
+    background-color: linear-gradient(90deg, rgba(36,205,227,1) 0%, rgba(30,145,242,1) 100%);
+}
+
+.color-letra1{
+    color: #30275C!important;
+}
+
+.color-letra2{
+    color: #5B46E0!important;
+}
+
+.color-letra3{
+    color: #2F4FA7!important;
+}
+
+.color-letra3a{
+    color: #94AADE!important;
+}
+
+.color-letra4{
+    color: #06f7cef6!important;
+}
+
+.colorBoton{
+    background: rgb(147,252,236);
+    background: linear-gradient(177deg, rgba(147,252,236,1) 0%, rgba(39,230,221,1) 100%);   
+}
+
+
+.fondo1{
+    background-color: #5B46E0;
+}
+
+.sombraBoton{
+    box-shadow: 2px 7px 5px -1px rgba(0,0,0,0.2);
+}
+
+.redondeadoEstado{
+    border-radius: 50px 50px 50px 50px;
+    border: 0px solid #000000;
+}
+
+.z-index1{
+    z-index: 1;
+}
+
+.z-index2{
+    z-index: 2;
 }
