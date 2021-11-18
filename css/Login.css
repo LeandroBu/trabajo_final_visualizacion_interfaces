@@ -189,6 +189,10 @@ input[type="radio"]:checked ~ label {
     background-color: linear-gradient(90deg, rgba(36,205,227,1) 0%, rgba(30,145,242,1) 100%);
 }
 
+.fondo4{
+    background-color: #F5F8FF!important;
+}
+
 .color-letra1{
     color: #30275C!important;
 }
@@ -209,9 +213,10 @@ input[type="radio"]:checked ~ label {
     color: #06f7cef6!important;
 }
 
+
 .colorBoton{
     background: rgb(147,252,236);
-    background: linear-gradient(177deg, rgba(147,252,236,1) 0%, rgba(39,230,221,1) 100%);   
+    background: linear-gradient(177deg, #25D9E0  0%, #2F4FA7 100%);   
 }
 
 
@@ -234,4 +239,62 @@ input[type="radio"]:checked ~ label {
 
 .z-index2{
     z-index: 2;
+}
+
+.imagenDoctor{
+    background-image: url(/img/fondoDoctor.png)!important;
+    background-repeat: no-repeat; 
+    background-position: center top;
+ }
+
+ @keyframes latidos {
+    from { box-shadow: none; }
+    50% { box-shadow: 2px 7px 20px -1px #3197db; }
+    to { box-shadow: none; }
+}
+
+@keyframes latidosBotonPrincipal {
+    from { box-shadow: none; }
+    50% { box-shadow: 0px 0px 20px 5px #3197db; }
+    to { box-shadow: none; }
+
+}
+
+ .bordeCajaVideo{
+     border: 5px solid ;
+     border-image: linear-gradient( #3acfd5 0%, #3197db 100%) 1; 
+     border-radius: 5% 5% 5% 5% !important;
+     background-color: rgb(255, 255, 255);
+ }
+
+ .efectoLatido{
+    animation: latidos .7s infinite;
+ }
+
+ .bordeCajaVideo:hover{
+    box-shadow: 2px 7px 20px -1px #3197db;
+
+ }
+
+ .hoverLatido:hover{
+    animation: latidos .7s infinite;
+ }
+
+ .latidosBotonPrincipal:hover{
+    animation: latidosBotonPrincipal ease-in infinite;
+ }
+
+ .efectoLatidoCorazon{
+    animation: latidossss .7s infinite;
+ }
+
+
+
+@keyframes latidossss {
+    from { transform: none; }
+    20% { transform: scale(1.5);}
+    40% { transform: scale(1.25);}
+    60% { transform: scale(1.5);}
+    80% { transform: scale(1.5);}
+    to { transform: none; }
 }
