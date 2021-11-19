@@ -35,19 +35,19 @@
                     <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item mx-3 fw-bolder ">
-                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Diabetes</a>
                   </li>
                   <li class="nav-item mx-3 fw-bolder" >
-                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Sueño</a>
                   </li>
                   <li class="nav-item mx-3 fw-bolder">
-                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active color-letra3a" aria-current="page" href="#">Presion</a>
                   </li>
 
                 </ul>
                 
                 <div class="">
-                    <button class="btn bg-white color-letra3 sombraBoton redondeadoEstado px-5 fw-bolder">Login</button>
+                    <button class="btn bg-white color-letra3 sombraBoton redondeadoEstado px-5 fw-bolder" data-bs-toggle="modal" data-bs-target="#login">Login</button>
                 </div>
               </div>
             </div>
@@ -84,8 +84,6 @@
         </div>
     </div>
 </div>
-
-
 
 <div class="w-100  container-fluid">
 
@@ -156,21 +154,24 @@
     </div>
 
 
-    <div class="col-12 col-lg-4 d-flex flex-column bg-white ps-5 ps-lg-5">
-      <h3 class="px-5">Historial de Diagnostico</h3>
-      <video class="m-auto" width="300" height="300" autoplay loop="true">
-        <source src="videos/corazon.mp4" type="video/mp4" />
-        <source src="videos/ice_video_20211115-144541.webm" type="video/webm" />
-        <source src="videos/corazon.ogv" type="video/ogg" />
-      </video>
+    <div class="col-12 col-lg-4 mt-4 ps-2 ps-lg-5 bg- rounded ">
+      <div class="w-100 h-100 px-3 py-3 rounded sombra  py-5 py-lg-5 px-lg-2 ps-lg-5">
+        <h3 class="">Historial de Diagnostico</h3>
+        <div class=" h-100  rounded m-auto d-flex justify-content-center">
+          <video class="p-5" width="300" height="300" autoplay loop="true">
+            <source src="videos/corazon.mp4" type="video/mp4" />
+            <source src="videos/ice_video_20211115-144541.webm" type="video/webm" />
+            <source src="videos/corazon.ogv" type="video/ogg" />
+          </video>
+        </div>
+      </div>
     </div>
 
 
-   <div class="col-12 col-lg-8 d-flex flex-column pe-2 pe-lg-5  bg-white ">
-      <h3 class="px-5">Tu Estado</h3>
-      <div class="row p-1  p-md-0 cajaColorAzulado rounded  justify-content-center py-5 py-lg-5 px-lg-2 ps-lg-5 ">
-
-        <div class="col-12 col-md-5  p-0 mx-2 d-flex  rounded justify-content-center my-2 "  >
+    <div class="col-12 col-lg-8 mt-4 pe-2 pe-lg-5 bg-white rounded">
+      <div class="row p-1  p-md-0 cajaColorAzulado rounded sombra  justify-content-center py-5 py-lg-5 px-lg-2 ps-lg-5">
+        <h3 class="">Tu Estado</h3>
+        <div class="col-12 col-md-5  p-0 mx-2 d-flex  rounded justify-content-center my-2 m-0">
           <div class="row w-100 p-3 justify-content-center bg-white align-items-center bg-info rounded sombra" style="max-width: 400px;">
             <div class="col-3 cajaColorRojo d-flex align-items-center justify-content-center rounded"
               style="width: 50px; height: 50px"> <i class="fas fa-tint m-auto figuraColorRojo fa-2x"></i></div>
@@ -235,16 +236,16 @@
 
     <div class="col-12 col-lg-4 mt-4 ps-2 ps-lg-5 bg- rounded ">
       <div class=" w-100 h-100 px-3 py-3 rounded sombra">
-        <div class=" h-100  rounded" >
-          <form class="row  align-items-center h-100 p-3">
+        <div class=" h-100  rounded d-flex align-items-center ">
+          <form class="row d-flex">
             <h3 class="mb-4 ">Completar Datos</h3>
 
 
             <div class="col-12 d-flex flex-column mt-3 m-auto">
-              <label class="fw-bold w-100" for="specificSizeInputName"><i class="fas fa-tint m-auto figuraColorRojo fa-1x me-2"></i>Sangre</label>
-              <div class="w-100 d-flex">
-                <input type="number" class="form-control mt-2  border-danger figuraColorRojo w-25" id="specificSizeInputName " placeholder="Min">
-                <input type="number" class="form-control mt-2 ms-4  border-danger figuraColorRojo w-25" id="specificSizeInputName" placeholder="Max">
+              <label class="fw-bold w-100 " for="specificSizeInputName"><i class="fas fa-tint m-auto figuraColorRojo fa-1x me-2"></i>Sangre</label>
+              <div class="w-100 d-flex justify-content-center">
+                <input type="number" class="form-control mt-2  border-danger figuraColorRojo" id="specificSizeInputName " placeholder="Min">
+                <input type="number" class="form-control mt-2 ms-4  border-danger figuraColorRojo" id="specificSizeInputName" placeholder="Max">
               </div>
              </div>
           
@@ -252,8 +253,8 @@
             <div class="col-12 d-flex flex-column mt-3">
               <label class="fw-bold w-100" for="specificSizeInputName"><i class="fas fa-tint m-auto figuraColorVerde fa-1x me-2"></i>Glucosa</label>
               <div class="w-100 d-flex">
-                <input type="number" class="form-control mt-2  bordeVerde figuraColorVerde w-25" id="specificSizeInputName " placeholder="Min">
-                <input type="number" class="form-control mt-2 ms-4  bordeVerde figuraColorVerde w-25" id="specificSizeInputName" placeholder="Max">
+                <input type="number" class="form-control mt-2  bordeVerde figuraColorVerde" id="specificSizeInputName " placeholder="Min">
+                <input type="number" class="form-control mt-2 ms-4  bordeVerde figuraColorVerde" id="specificSizeInputName" placeholder="Max">
               </div>
              </div>
 
@@ -261,15 +262,15 @@
             <div class="col-12 d-flex flex-column mt-3">
               <label class="fw-bold w-100" for="specificSizeInputName"><i class="fas fa-tint m-auto figuraColorRosa fa-1x me-2"></i>Globulos</label>
               <div class="w-100 d-flex">
-                <input type="number" class="form-control mt-2  bordeRosa figuraColorRosa w-25" id="specificSizeInputName" placeholder="Min">
-                <input type="number" class="form-control mt-2 ms-4  bordeRosa figuraColorRosa w-25" id="specificSizeInputName" placeholder="Max">
+                <input type="number" class="form-control mt-2  bordeRosa figuraColorRosa" id="specificSizeInputName" placeholder="Min">
+                <input type="number" class="form-control mt-2 ms-4  bordeRosa figuraColorRosa" id="specificSizeInputName" placeholder="Max">
               </div>
              </div>
 
              <div class="col-12 d-flex flex-column mt-3">
               <label class="fw-bold w-100" for="specificSizeInputName"><i class="fas fa-tint m-auto figuraColorVioleta fa-1x me-2"></i>Ritmo Cardio</label>
               <div class="w-100 d-flex">
-                <input type="number" class="form-control mt-2  bordeVioleta figuraColorVioleta w-50" id="specificSizeInputName" placeholder="BMP">
+                <input type="number" class="form-control mt-2  bordeVioleta figuraColorVioleta" id="specificSizeInputName" placeholder="BMP">
 
               </div>
              </div>
@@ -286,34 +287,31 @@
       </div>
     </div>
     
+    <!--Carter error -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="liveToast" class="toast bordeRojo cajaColorRojo" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+         <strong class="me-auto">Mensaje de error</strong>
+         <small>Ahora</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Debe completar todos los campos
+        </div>
+      </div>
+    </div>   
+              
 
-              <!--Carter error -->
-              <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                <div id="liveToast" class="toast bordeRojo cajaColorRojo" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                   <strong class="me-auto">Mensaje de error</strong>
-                   <small>Ahora</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    Debe completar todos los campos
-                  </div>
-                </div>
-              </div>   
-
-    <div class="col-12 col-lg-8 bg-white p-0 rounded px-0 pe-lg-3 mt-4">
-        <div class="row w-100 bg-white p-0 m-0 px-3  rounded cajaColorAzulado">
+    <div class="col-12 col-lg-8 mt-4 pe-2 pe-lg-5 bg-white rounded">
+      <div class="row p-1  p-md-0 cajaColorAzulado rounded sombra  justify-content-center py-5 py-lg-5 px-lg-2 ps-lg-5">
+        <h3 class="fw-bold ">Frecuencia Cardíaca</h3>
           <div class="col-12 d-flex justify-content-between cajaColorAzulado  p-0 m-0 rounded">
             <div class="d-inline-block px-5 pt-3 cajaColorAzulado">
-              <h3 class="fw-bold ">Frecuencia Cardíaca</h3>
               <p class="text-muted"> <span class="fw-bold">17-23</span> Junio 2021</p>
-            </div>
-            <div class="d-inline-block px-5 pt-3">
-               <p class="mt-2 p-2 m-auto bg-white rounded text-muted fw-bold"> <span class="fw-bold figuraColorRojo">75 bpm</span> Promedio</p>
+              <p class="mt-2 p-2 m-auto bg-white rounded text-muted fw-bold"> <span class="fw-bold figuraColorRojo">75 bpm</span> Promedio</p>
             </div>
           </div>
-
-          <div class="col-12 d-flex cajaColorAzulado p-0 m-0 justify-content-center">
+          <div class="col-12 d-flex cajaColorAzulado p-0 m-auto justify-content-center">
               <div class="d-none d-lg-block">
                 <img src="img/Frame 9.png" width="100%" height="400px" alt="" style="max-width: 1040px">
               </div>
@@ -427,10 +425,10 @@
   <footer class="py-3">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Login</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#login">Login</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Diabetes</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sueño</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Presion</a></li>
     </ul>
     <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
   </footer>
@@ -456,6 +454,56 @@
       </div>
       <div class="modal-footer cajaColorAzulado">
         <button type="button" class="btn figuraColorVerde cajaColorVerde fw-bold" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header cajaColorAzulado">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-center ">
+        <div class="col-12 col-md-6 p-5 pb-0 p-md-1 bg-white rounded-3">
+          <form class="">
+              <h2 class="text-center mb-lg-5">
+                  Iniciar Sesion
+              </h2>
+              <div class="mb-3 mt-5">
+                  <label for="exampleInputEmail1" class="form-label"><i class="fas fa-envelope colorIconoLogin"></i> Ingrese su Mail</label>
+                  <input type="mail" class="form-control rounded-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mail">
+                  
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Ingrese su Clave</label>
+                  <input type="email" class="form-control rounded-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Clave">  
+              </div>
+              <div class="mt-5">
+                  <button class="fondo-login rounded-3 btn btn-primary border-0 w-100 shadow-sm ">
+                      Login
+                  </button>
+              </div>
+              <div class="text-center mt-4">
+                  <span class="text-">
+                      Forgot
+                  </span>
+                  <a class="text-center text-decoration-none text-dark fw-bold" href="#">
+                      <a href="#"> Username / Password?</a>
+                  </a>
+              </div>
+              <div class="mt-5 text-center d-flex align-items-end ">
+                <button class="fondo-login rounded-3 btn btn-primary border-0 w-100 shadow-sm ">
+                  Crear cuenta
+              </button>
+              </div>
+          </form>
+      </div>
+      </div>
+      <div class="modal-footer cajaColorAzulado">
+        <button type="button" class="btn figuraColorVerde  fw-bold" data-bs-dismiss="modal"></button>
       </div>
     </div>
   </div>

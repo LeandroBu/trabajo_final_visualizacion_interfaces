@@ -178,7 +178,7 @@ input[type="radio"]:checked ~ label {
 }
 
 .fondoMain{
-    background-image: url(/img/fondo\ 4.png)!important;
+    background-image: url(/img/fondo.png)!important;
     background-repeat: no-repeat; 
     background-position: center top;
  }
