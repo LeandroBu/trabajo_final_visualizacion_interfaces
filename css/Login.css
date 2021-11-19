@@ -135,6 +135,10 @@ input[type="radio"]:checked ~ label {
     background-color: rgb(243, 249, 253);
 }
 
+.cajaColorAzulFuerte{
+    background-color: #2F4FA7!important;
+}
+
 .cajaColorVioleta{
     background-color: rgb(227, 210, 255);
 }
@@ -263,10 +267,12 @@ input[type="radio"]:checked ~ label {
  .bordeCajaVideo{
      border: 5px solid ;
      border-image: linear-gradient( #3acfd5 0%, #3197db 100%) 1; 
-     border-radius: 5% 5% 5% 5% !important;
      background-color: rgb(255, 255, 255);
  }
 
+ .bordeRedondeado{
+    border-radius: 10px 10px 10px 10px !important;
+ }
  .efectoLatido{
     animation: latidos .7s infinite;
  }
@@ -288,13 +294,33 @@ input[type="radio"]:checked ~ label {
     animation: latidossss .7s infinite;
  }
 
-
-
 @keyframes latidossss {
     from { transform: none; }
     20% { transform: scale(1.5);}
     40% { transform: scale(1.25);}
     60% { transform: scale(1.5);}
     80% { transform: scale(1.5);}
+    to { transform: none; }
+}
+
+.labelForma{
+    box-shadow:  2px 2px 5px 0px #73b2db;
+    border-radius: 7px 7px 7px 7px !important;
+}
+
+.botonFormaForm{
+    border-radius: 7px 7px 7px 7px !important;
+}
+
+label:hover{
+    animation: latidosChico .7s infinite;
+}
+
+@keyframes latidosChico {
+    from { transform: none; }
+    20% { transform: scale(1.2);}
+    40% { transform: scale(1.1);}
+    60% { transform: scale(1.2);}
+    80% { transform: scale(1.2);}
     to { transform: none; }
 }

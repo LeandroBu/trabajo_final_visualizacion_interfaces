@@ -12,6 +12,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="css/Login.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+
 
 <body class="w-100 fondoMain fondo3 ">
 
@@ -21,8 +23,8 @@
             <nav class="navbar navbar-expand-md navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="img/ice_screenshot_20211108-171846.png" alt="" width="40" height="25" class="d-inline-block align-text-top">
-                    <span class="font-weight-bold color-letra3 fw-bold">Medical</span>
+                    <img src="img/ice_screenshot_20211108-171846.png" alt="" width="40" height="25" class="d-inline-block align-text-top efectoLatidoCorazon">
+                    <span class="font-weight-bold color-letra3 fw-bold ms-2">Medical</span>
                  </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -121,9 +123,7 @@
         </div>
     </div>
   </div>
-
 </div>
-
 
   <!-- Team Container 
   <div class="w3-container w3-padding-64 w3-center bg-info" id="team">
@@ -164,27 +164,26 @@
 
     <div class="col-12 bg-white mb-5">
       <div class="w-100 py-3 bg-white d-flex flex-column align-items-center justify-content-center align-content-center">
-        <h3>Podes controlar tu salud diariamente</h3>
+        <h3 class="color-letra3">Podes controlar tu salud diariamente</h3>
         <div class="d-flex">
-          <i class="d-lg-none m-auto fas fa-arrow-circle-left fs-3 text-primary"></i>
-          <div class=" bordeRojo sombraColorRojo d-flex flex-column justify-content-center align-content-center align-items-center rounded py-2 mx-3" style="max-width: 425px; min-width: 200px;">
+          <i class="d-lg-none m-auto fas fa-arrow-circle-left fs-3 color-letra3"></i>
+          <div class=" bordeRojo sombraColorRojo d-flex flex-column justify-content-center align-content-center align-items-center py-2 mx-3 bordeRedondeado" style="max-width: 425px; min-width: 200px;">
             <h5 class="figuraColorRojo">Cardiologia</h5>
             <img class="efectoLatidoCorazon" src="https://img.icons8.com/color/48/000000/aed.png"/>
           </div>
-          <div class="d-none d-md-flex cajaColorAzulado  bordeCajaVideo flex-column justify-content-center align-content-center align-items-center rounded py-2 mx-3" style="max-width: 425px; min-width: 200px;">
+          <div class="d-none d-md-flex cajaColorAzulado  bordeCajaVideo flex-column justify-content-center align-content-center align-items-center bordeRedondeado py-2 mx-3" style="max-width: 425px; min-width: 200px;">
             <h5>Diabetes</h5>
             <img src="https://img.icons8.com/ios-filled/50/000000/diabetes.png"/>
           </div>
           <div class="d-none d-lg-flex cajaColorAzulado bordeCajaVideo flex-column justify-content-center align-content-center align-items-center rounded py-2 mx-3" style="max-width: 425px; min-width: 200px;">
             <h5>Sueño</h5>
             <img src="https://img.icons8.com/ios-filled/50/000000/sleeping--v2.png"/>
-            
           </div>
           <div class="d-none d-lg-flex cajaColorAzulado bordeCajaVideo flex-column justify-content-center align-content-center align-items-center rounded py-2 mx-3" style="max-width: 425px; min-width: 200px;">
             <h5>Presion</h5>
             <img src="https://img.icons8.com/ios-filled/50/000000/sphygmomanometer.png"/>
           </div>
-          <i class="d-lg-none m-auto fas fa-arrow-circle-right fs-3 text-primary color-letra4"></i>
+          <i class="d-lg-none m-auto fas fa-arrow-circle-right fs-3 color-letra3"></i>
         </div>
       </div>
     </div>
@@ -202,7 +201,7 @@
 
    <div class="col-12 col-lg-8 d-flex flex-column pe-2 pe-lg-5  bg-white ">
       <h3 class="px-5">Tu Estado</h3>
-      <div class="row p-1  p-md-0 cajaColorAzulado rounded  justify-content-center py-5 py-lg-5 px-lg-2">
+      <div class="row p-1  p-md-0 cajaColorAzulado rounded  justify-content-center py-5 py-lg-5 px-lg-2 ps-lg-5 ">
 
         <div class="col-12 col-md-5  p-0 mx-2 d-flex  rounded justify-content-center my-2 "  >
           <div class="row w-100 p-3 justify-content-center bg-white align-items-center bg-info rounded sombra" style="max-width: 400px;">
@@ -220,7 +219,10 @@
         <div class="col-12 col-md-5   p-0 mx-2 d-flex rounded justify-content-center my-2 "  >
           <div class="row w-100 p-3 justify-content-center bg-white align-items-center bg-info rounded sombra" style="max-width: 400px;">
             <div class="col-3 cajaColorVerde d-flex align-items-center justify-content-center rounded"
-              style="width: 50px; height: 50px"> <i class="fas fa-tint m-auto figuraColorVerde fa-2x"></i></div>
+              style="width: 50px; height: 50px"> 
+              <i class="fas fa-microscope m-auto figuraColorVerde fa-2x"></i>
+              
+            </div>
             <div class="col-9 d-flex flex-column ps-3 ms-3">
               <h6 class="fw-bold">Nivel de Glucosa</h6>
               <h5 class="fw-bold figuraColorVerde">78/92</h5>
@@ -233,11 +235,17 @@
         <div class="col-12 col-md-5 p-0 mx-2 d-flex  rounded justify-content-center my-2 "  >
           <div class="row w-100 p-3 justify-content-center bg-white align-items-center bg-info rounded sombra" style="max-width: 400px;">
             <div class="col-3 cajaColorVioleta d-flex align-items-center justify-content-center rounded"
-              style="width: 50px; height: 50px"> <i class="fas fa-tint m-auto figuraColorVioleta fa-2x"></i></div>
+              style="width: 50px; height: 50px">
+              
+               <i class="fas fa-heartbeat m-auto figuraColorVioleta fa-2x"></i>
+            </div>
             <div class="col-9 d-flex flex-column ps-3 ms-3">
               <h6 class="fw-bold">Ritmo Cardiaco</h6>
               <h5 class="fw-bold figuraColorVioleta">78 bmp</h5>
-              <p class="text-muted fw-bold"><i class="fas fa-long-arrow-alt-down figuraColorRojo"></i><span class="figuraColorRojo">2%</span> menos que la
+              <p class="text-muted fw-bold">
+                <i class="fas fa-long-arrow-alt-down figuraColorRojo"></i>
+                
+                <span class="figuraColorRojo">2%</span> menos que la
                 semana pasada</p>
             </div>
           </div>
@@ -335,7 +343,7 @@
         </div>
     </div>
 
-    <div class="toast d-flex align-items-center align-content-center justify-content-center text-white cajaColorVerde border-0 m-5 w-100" role="alert" id="liveToast" aria-live="assertive" aria-atomic="true">
+    <div class="toast d-flex align-items-center align-content-center justify-content-center text-white cajaColorVerde border-0 mx-5 w-100" role="alert" id="liveToast" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
         <div class="toast-body">
             <i class="d-inline-block fas fa-check-circle figuraColorVerde mx-3 fs-5"></i>
@@ -347,6 +355,68 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="w-100  container-fluid">
+
+    <div class="row fondo4">
+      <div class="col-12 col-lg-7 fondo4  p-4" >
+        <div class="w-100 h-100 fondo4 px-5 pt-5 d-flex justify-content-center">
+          <img class="" src="img/chat.png" style="max-width:500px; max-height: 700px;" >
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 fondo4 py-5">
+          <div class="d-flex flex-column align-items-center"> 
+            <h3 class="fs-1 lh-base color-letra3">Comienza una consulta en linea con un/a Doctor/a </h3>
+            <p class="color-letra3a fw-bold fs-4 lh-sm lh-base ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quo dignissimos atque exercitationem eum nobis nesciunt, 
+              impedit consequatur quasi maxime ad quisquam corrupti pariatur itaque repellat praesentium animi reiciendis 
+              optio debitis.
+            </p> 
+            <div class="d-flex flex-column align-items-center align-items-xl-start w-100 ">
+  
+              <div class="d-flex flex-column flex-md-row my-2 pe-lg-5 ">
+                <div class="form-check p-0 my-3  me-md-5 d-flex align-items-center justify-content-center ">
+                  <input class="form-check-input m-0 p-0" type="checkbox" value="" id="flexCheckChecked" checked >
+                  <label class="form-check-label rounded  px-3 py-3 ms-3 labelForma fw-bold color-letra3 bg-white"" for="flexCheckChecked" style="width: 150px;">    
+                    <i class="fas fa-sms me-2 color-letra3"></i> Consulta
+                  </label>
+                </div>
+  
+                <div class="form-check p-0 my-3 ms-md-5 d-flex align-items-center justify-content-center ">
+                  <input class="form-check-input m-0 p-0" type="checkbox" value="" id="flexCheckChecked"  >
+                  <label class="form-check-label rounded  px-3 py-3 ms-3 labelForma fw-bold color-letra3 bg-white"" for="flexCheckChecked" style="width: 150px;">
+                    <i class="fas fa-phone-alt me-2 color-letra3"></i> Telefono 
+                  </label>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-md-row my-2 pe-lg-5">
+                <div class="form-check p-0 my-3  me-md-5 d-flex align-items-center justify-content-center ">
+                  <input class="form-check-input m-0 p-0" type="checkbox" value="" id="flexCheckChecked"  >
+                  <label class="form-check-label rounded  px-3 py-3 ms-3 labelForma fw-bold color-letra3 bg-white"" for="flexCheckChecked" style="width: 150px;">
+                    <i class="fas fa-comments me-2 color-letra3"></i>  Llamada
+                  </label>
+                </div>
+  
+                <div class="form-check p-0 my-3 ms-md-5 d-flex align-items-center justify-content-center ">
+                  <input class="form-check-input m-0 p-0" type="checkbox" value="" id="flexCheckChecked"  >
+                  <label class="form-check-label px-3 py-3 ms-3 labelForma fw-bold color-letra3 bg-white" for="flexCheckChecked" style="width: 150px;">
+                    <i class="fas fa-video me-2 color-letra3"></i> Video
+       
+                  </label>
+                </div>
+              </div>
+  
+              <button type="button" class="btn mt-3 colorBoton sombraBoton redondeadoEstado text-white fw-bold px-4 py-2">Empezar Consulta</button>
+
+            </div>
+            <p></p>
+          </div>
+      </div>
+
+    </div>
+  </div>
 
     <!-- Contact Container -->
     <div class="w3-container w3-padding-64 w3-theme-l5 fondo4" id="contact">
@@ -380,9 +450,11 @@
         </div>
       </div>
     </div>
-  </div>
     <!-- Image of location/map -->
     <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+   <!--  <canvas id="grafica"></canvas>-->
+    
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
@@ -407,13 +479,15 @@
 
 
 
+    
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/grafico.js"></script>
 
+  <script src="https://unpkg.com/@popperjs/core@2"s
+  crossorigin="anonymous"></script>
 
-
-
-<script src="https://unpkg.com/@popperjs/core@2"s
-crossorigin="anonymous"></script>
     <script src="js/popper.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"></script>
 
@@ -440,7 +514,6 @@ crossorigin="anonymous"></script>
       return new bootstrap.Tooltip(tooltipTriggerEl)
       })
     </script>
-
 <script >
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
@@ -452,10 +525,6 @@ if (toastTrigger) {
   })
 }
 </script>
-
-
-
-
     <script>
       // Script for side navigation
       function w3_open() {
