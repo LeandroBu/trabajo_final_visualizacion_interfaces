@@ -15,7 +15,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
 
 
-<body class="w-100 fondoMain fondo3 ">
+<body class="w-100 fondoMain fondo3">
 
   <div class="container-fluid  w-100" style="min-height: 100vh;">
     <div class="container-fluid p-0 row m-auto px-1  " style="max-width: 1450px;">
@@ -169,19 +169,24 @@
           <i class="d-lg-none m-auto fas fa-arrow-circle-left fs-3 color-letra3"></i>
           <div class=" bordeRojo sombraColorRojo d-flex flex-column justify-content-center align-content-center align-items-center py-2 mx-3 bordeRedondeado" style="max-width: 425px; min-width: 200px;">
             <h5 class="figuraColorRojo">Cardiologia</h5>
-            <img class="efectoLatidoCorazon" src="https://img.icons8.com/color/48/000000/aed.png"/>
+            <img class="efectoLatidoCorazon" src="img/corazonLogo.png"/>
           </div>
           <div class="d-none d-md-flex cajaColorAzulado  bordeCajaVideo flex-column justify-content-center align-content-center align-items-center bordeRedondeado py-2 mx-3" style="max-width: 425px; min-width: 200px;">
             <h5>Diabetes</h5>
-            <img src="https://img.icons8.com/ios-filled/50/000000/diabetes.png"/>
+            <img src="img/diabetes.png"/>
           </div>
           <div class="d-none d-lg-flex cajaColorAzulado bordeCajaVideo flex-column justify-content-center align-content-center align-items-center rounded py-2 mx-3" style="max-width: 425px; min-width: 200px;">
             <h5>Sueño</h5>
+
             <img src="https://img.icons8.com/ios-filled/50/000000/sleeping--v2.png"/>
+
+            <img src="img/sueno.png"/>
+            
+
           </div>
           <div class="d-none d-lg-flex cajaColorAzulado bordeCajaVideo flex-column justify-content-center align-content-center align-items-center rounded py-2 mx-3" style="max-width: 425px; min-width: 200px;">
             <h5>Presion</h5>
-            <img src="https://img.icons8.com/ios-filled/50/000000/sphygmomanometer.png"/>
+            <img src="img/presion.png"/>
           </div>
           <i class="d-lg-none m-auto fas fa-arrow-circle-right fs-3 color-letra3"></i>
         </div>
@@ -355,6 +360,7 @@
       </div>
     </div>
 
+
   </div>
 
   <div class="w-100  container-fluid">
@@ -418,7 +424,7 @@
     </div>
   </div>
 
-    <!-- Contact Container -->
+    <!-- Contact Container 
     <div class="w3-container w3-padding-64 w3-theme-l5 fondo4" id="contact">
       <div class="w3-row ">
         <div class="w3-col m5">
@@ -433,30 +439,67 @@
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
             <div class="w3-section">
               <label>Name</label>
-              <input class="w3-input" type="text" name="Name" required>
+              <input class="w3-input" type="text" name="Name" required> -->
+
+
+  <!-- Contact Container -->
+  <div class="m-0 vh-100 row justify-content-center align-items-center align-content-center cajaColorAzulado">
+    <div class="col-md-4 d-flex flex-column ps-5 ps-lg-5 cajaColorAzulado">
+      <img src="img/doctorConsulta.png" alt="doctorConsulta">
+    </div>
+    <div class="col order-last justify-content-center align-items-center rounded cajaColorAzulado"> 
+      <div class="justify-content-center align-items-center">
+        <h4 class="mb-3">Video llamada de consulta expres</h4>
+        <form class="needs-validation " novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Este dato es requerido para la consulta.
+              </div>
+
             </div>
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input" type="text" name="Email" required>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Este dato es requerido para la consulta.
+              </div>
             </div>
-            <div class="w3-section">
-              <label>Message</label>
-              <input class="w3-input" type="text" name="Message" required>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com">
+              <div class="invalid-feedback">
+                Ingrese una dirección de correo electrónico para recibir la respuesta de la consulta.
+              </div>
             </div>
-            <input class="w3-check" type="checkbox" checked name="Like">
-            <label>I Like it!</label>
-            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-          </form>
-        </div>
+
+            
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Guardar informacion para futura consulta</label>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg mb-5" type="submit">Enviar consulta</button>
+        </form>
       </div>
     </div>
-    <!-- Image of location/map -->
+    <!-- 
     <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
 
-   <!--  <canvas id="grafica"></canvas>-->
+
     
 
-    <!-- Footer -->
+   
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
       <h4>Follow Us</h4>
       <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i
@@ -475,7 +518,26 @@
         <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
             <i class="fa fa-chevron-circle-up"></i></span></a>
       </div>
-    </footer>
+    </footer>-->
+
+<!--  <canvas id="grafica"></canvas>-->
+<!-- Image of location/map -->
+<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+<!-- Footer -->
+<div class="bg-dark text-white mx-0">
+  <footer class="py-3">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Login</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
+  </footer>
+</div>  
+    
+
 
 
 
