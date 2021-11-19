@@ -306,15 +306,23 @@
               <label class="" for="specificSizeInputName"></label>
               <input type="number" class="form-control bordeRosa mt-4 mt-xl-2" id="specificSizeInputName" placeholder="Max">
             </div>
-            <div class="col-auto mt-5">
-  
-              <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
-                (error)
-              </button>
+
+            <button type="button" class="btn btn-primary col-sm-5 col-md-6 my-2" id="liveToastBtn">Mensaje error</button>
             
-              <button type="button" class="btn btn-primary" id="liveToastBtn">Completar Datos (Correcto)</button>
-              
+
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+              <div id="liveToast" class="toast bordeRojo cajaColorRojo" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                 <strong class="me-auto">Mensaje de error</strong>
+                 <small>Ahora</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Debe completar todos los campos
+                </div>
+              </div>
             </div>
+            
           </form>
         </div>
       </div>
