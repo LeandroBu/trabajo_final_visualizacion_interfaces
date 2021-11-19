@@ -15,7 +15,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
 
 
-<body class="w-100 fondoMain fondo3">
+<body class="w-100 fondoMain cajaColorAzulado">
 
   <div class="container-fluid  w-100" style="min-height: 100vh;">
     <div class="container-fluid p-0 row m-auto px-1  " style="max-width: 1450px;">
@@ -125,40 +125,7 @@
   </div>
 </div>
 
-  <!-- Team Container 
-  <div class="w3-container w3-padding-64 w3-center bg-info" id="team">
-    <h2>Nuestro TEAM</h2>
-    <p>Conozca al equipo, nuestras ratas de oficina:</p>
-
-    <div class="w3-row"><br>
-
-      <div class="w3-quarter">
-        <img src="img/perfilDoctor.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Kendel Walker</h3>
-        <p>Diseñadora Web</p>
-      </div>
-
-      <div class="w3-quarter">
-        <img src="img/perfilDoctor2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Rebecca Flex</h3>
-        <p>Soporte</p>
-      </div>
-
-      <div class="w3-quarter">
-        <img src="img/perfilDoctor4.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Jan Ringo</h3>
-        <p>Jefe de area</p>
-      </div>
-
-      <div class="w3-quarter">
-        <img src="img/perfilDoctor3.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Meave Ringo</h3>
-        <p>Pediatra</p>
-      </div>
-
-    </div>
-  </div> -->
-
+ 
   <!-- Work Row -->
   <div class="row bg-white py-5 " id="work">
 
@@ -306,28 +273,34 @@
               <label class="" for="specificSizeInputName"></label>
               <input type="number" class="form-control bordeRosa mt-4 mt-xl-2" id="specificSizeInputName" placeholder="Max">
             </div>
-
-            <button type="button" class="btn btn-primary col-sm-5 col-md-6 my-2" id="liveToastBtn">Mensaje error</button>
-            
-
-            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-              <div id="liveToast" class="toast bordeRojo cajaColorRojo" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                 <strong class="me-auto">Mensaje de error</strong>
-                 <small>Ahora</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Debe completar todos los campos
-                </div>
-              </div>
+            <div class="col-12  mt-5">
+  
+              <button type="button" class="btn figuraColorRojo cajaColorRojo  my-2" id="liveToastBtn">Mensaje error</button>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn figuraColorVerde cajaColorVerde" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Datos Correctos
+            </button>
             </div>
-            
           </form>
         </div>
       </div>
     </div>
     
+
+              <!--Carter error -->
+              <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast bordeRojo cajaColorRojo" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                   <strong class="me-auto">Mensaje de error</strong>
+                   <small>Ahora</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Debe completar todos los campos
+                  </div>
+                </div>
+              </div>   
+
     <div class="col-12 col-lg-8 bg-white p-0 rounded px-0 pe-lg-3 mt-4">
         <div class="row w-100 bg-white p-0 m-0 px-3  rounded cajaColorAzulado">
           <div class="col-12 d-flex justify-content-between cajaColorAzulado  p-0 m-0 rounded">
@@ -354,7 +327,7 @@
     <div class="toast d-flex align-items-center align-content-center justify-content-center text-white cajaColorVerde border-0 mx-5 w-100" role="alert" id="liveToast" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
         <div class="toast-body">
-            <i class="d-inline-block fas fa-check-circle figuraColorVerde mx-3 fs-5"></i>
+          <img class="efectoLatidoCorazon" src="img/corazonLogo.png"/>
             <div class=" d-inline-block figuraColorVerde fs-5">
             Tenes un Corazon saludable.
           </div>
@@ -366,7 +339,7 @@
 
   </div>
 
-  <div class="w-100  container-fluid">
+  <div class="w-100  container-fluid pb-5">
 
     <div class="row fondo4">
       <div class="col-12 col-lg-7 fondo4  p-4" >
@@ -445,10 +418,10 @@
               <input class="w3-input" type="text" name="Name" required> -->
 
 
-  <!-- Contact Container -->
-
+ 
 <!-- Image of location/map -->
 <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+<!-- Footer -->
 <!-- Footer -->
 <div class="bg-dark text-white mx-0">
   <footer class="py-3">
@@ -461,13 +434,32 @@
     </ul>
     <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
   </footer>
-</div>  
-
-    
+</div>
 
 
 
-    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header cajaColorAzulado">
+        <h4 class="modal-title color-letra3" id="exampleModalLabel">Tenes un Corazon saludable</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-center ">
+        <video class="" width="300" height="300" autoplay loop="true">
+          <source src="videos/video corazon.mp4" type="video/mp4" />
+          <source src="videos/video corazon.webm" type="video/webm" />
+          <source src="videos/video corazon.ogv" type="video/ogg" />
+        </video> 
+      </div>
+      <div class="modal-footer cajaColorAzulado">
+        <button type="button" class="btn figuraColorVerde cajaColorVerde fw-bold" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
